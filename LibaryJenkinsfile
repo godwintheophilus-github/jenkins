@@ -7,6 +7,6 @@ echo "branch ${env.BRANCH_NAME}"
 if (env.BRANCH_NAME == 'main') {
     LinuxVerifications {
         env = "dev"
-        branch = ${env.BRANCH_NAME}
+        branch = env.BRANCH_NAME
     }
 }
